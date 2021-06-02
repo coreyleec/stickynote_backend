@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 2021_05_29_211408) do
     t.string "title"
     t.datetime "datetime"
     t.text "note"
+    t.boolean "archived"
     t.integer "user_id"
   end
 
@@ -24,6 +25,7 @@ ActiveRecord::Schema.define(version: 2021_05_29_211408) do
     t.string "reminder_text"
     t.datetime "datetime"
     t.datetime "reminder_date"
+    t.boolean "archived"
     t.integer "user_id"
   end
 

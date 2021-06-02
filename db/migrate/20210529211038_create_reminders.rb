@@ -6,7 +6,7 @@ class CreateReminders < ActiveRecord::Migration[6.1]
       t.string :reminder_text
       t.timestamp :datetime
       t.timestamp :reminder_date
-      
+      t.boolean :archived
       t.integer :user_id
     end
   end

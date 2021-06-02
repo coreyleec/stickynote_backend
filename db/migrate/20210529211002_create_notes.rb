@@ -5,7 +5,7 @@ class CreateNotes < ActiveRecord::Migration[6.1]
       t.string :title
       t.timestamp :datetime
       t.text :note
-
+      t.boolean :archived
       t.integer :user_id
       
     end
