@@ -20,8 +20,10 @@ ActiveRecord::Schema.define(version: 2021_05_29_211408) do
   end
 
   create_table "reminders", force: :cascade do |t|
+    t.string "title"
     t.string "reminder_text"
     t.datetime "datetime"
+    t.datetime "reminder_date"
     t.integer "user_id"
   end
 
