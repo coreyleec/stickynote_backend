@@ -14,17 +14,17 @@ ActiveRecord::Schema.define(version: 2021_05_29_211408) do
 
   create_table "notes", force: :cascade do |t|
     t.string "title"
-    t.datetime "datetime"
     t.text "note"
+    t.string "datetime"
     t.boolean "archived"
     t.integer "user_id"
   end
 
   create_table "reminders", force: :cascade do |t|
     t.string "title"
-    t.string "reminder_text"
+    t.text "reminder"
     t.string "datetime"
-    t.datetime "reminder_date"
+    t.string "reminderdate"
     t.boolean "archived"
     t.integer "user_id"
   end
